@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Roboto', sans-serif; */
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #f3f3f3;
+  --third-color: #d7535a;
+  --fourth-color: #ff7e97;
+  --footer-color: #ff4b6e;
+  --icons-color: #ff819a;
+
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0px;
+
+  background-color: var(--third-color);
+}
+.nav_section h2 {
+  font-size: 40px;
+  line-height: 60px;
+  font-family: 'Protest Guerrilla', sans-serif;
+}
+.nav_section ul {
+  display: flex;
+  font-family: var(--primary-font);
+  gap: 25px;
+  font-weight: 600;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.header_bottom {
+  background: rgb(237, 246, 5);
+  background: linear-gradient(
+    90deg,
+    rgba(237, 246, 5, 1) 35%,
+    rgba(0, 198, 240, 1) 100%
+  );
+  padding: 3px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav_section svg {
+  display: none;
+}
+.nav_bar {
+  overflow: hidden;
+  transition: width 1s ease-in-out;
+}
+
+.closed_navbar {
+  width: 0;
+}
+
+.opened_navbar {
+  width: 100%;
+}
+.closed_nav {
+  width: 100%;
+  padding: 20px 10px;
+  background-color: var(--fourth-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  border-radius: 0px 0px 5px 5px;
+}
+.closed_nav ul {
+  padding: 0px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav_section ul li:nth-child(3),
+  .nav_section ul li:nth-child(7) {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav_section {
+    padding: 5px 15px;
+    justify-content: space-between;
+  }
+  .nav_section ul {
+    display: none;
+  }
+  .nav_section svg {
+    display: block;
+  }
+  .closed_navbar {
+    display: block;
+  }
+  .nav_bar {
+    position: fixed;
+    top: 70px;
+    right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+}
