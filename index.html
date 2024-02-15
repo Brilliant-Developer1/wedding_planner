@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap"
+      href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Roboto:300,400,500,700"
       rel="stylesheet"
     />
     <link type="text/css" rel="stylesheet" href="styles/style.css" />
     <link type="text/css" rel="stylesheet" href="styles/navStyles.css" />
+    <link type="text/css" rel="stylesheet" href="styles/aboutUs.css" />
     <title>💏 WEDDY</title>
   </head>
   <body>
+    <!-- Navigation and Hero section Start-->
     <header>
       <nav>
+        <!-- Normal Screen navigation Start -->
         <section class="nav_container">
           <div class="nav_section">
             <h2>
@@ -75,10 +76,14 @@
             </div>
           </div>
         </section>
+        <!-- Normal Screen navigation End -->
+        <!-- Small Screen navigation Start -->
         <section class="nav_bar opened_navbar">
           <div class="closed_nav"></div>
         </section>
+        <!-- Small Screen navigation End -->
       </nav>
+      <!-- Hero section Start -->
       <div class="header_bottom"></div>
       <section class="hero_container">
         <div class="blurry-background"></div>
@@ -91,10 +96,34 @@
           </p>
         </div>
       </section>
+      <!-- Hero section End -->
     </header>
-    <main></main>
+    <!-- Navigation and Hero section End-->
+    <main>
+      <section class="flex_column section-padding">
+        <div class="section_header flex_column">
+          <div>
+            <h2>ABOUT US</h2>
+            <div>
+              <img src="./assests/title-img.png" alt="title image" />
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus.
+          </p>
+        </div>
+        <div class="flex_row">
+          <div>
+            <img src="./assests/aboutUs_image.png" alt="AboutUs image" />
+          </div>
+          <div>History</div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 
-  <script type="module" src="script.js"></script>
+  <script type="module" src="Functions/navFunctions.js"></script>
 </html>

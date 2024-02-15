@@ -11,13 +11,13 @@
   justify-content: space-around;
   align-items: center;
   padding: 5px 0px;
-  z-index: 1000;
+  z-index: 10;
   background-color: var(--third-color);
 }
 .nav_section h2 {
   font-size: 40px;
   line-height: 60px;
-  font-family: 'Protest Guerrilla', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 .nav_section ul {
   display: flex;
@@ -89,6 +89,8 @@ nav a {
   align-items: center;
   position: relative;
   font-family: var(--primary-font);
+  text-align: center;
+  z-index: -1;
 }
 .hero_container h1 {
   font-size: 40px;
@@ -100,7 +102,7 @@ nav a {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
-  text-align: center;
+  font-size: 18px;
   font-family: 'Raleway', sans-serif;
 }
 
