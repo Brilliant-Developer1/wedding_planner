@@ -1,0 +1,59 @@
+/* 12-column grid system */
+.services_container {
+  max-width: 1140px;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.services_content_container {
+  padding: 50px 10px 0px;
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  align-items: center;
+}
+.services_content_container p {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  color: #666666;
+}
+#services {
+  background-color: #f3f3f3;
+}
+.services_content_container_text {
+  width: 100%;
+  max-width: 212px;
+}
+
+/* Large screen (desktop) styles */
+@media screen and (max-width: 1024px) {
+  .services_content_container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .col-lg-4 {
+    width: calc(33.33% - 2rem); /* 33.33% width with some gutter */
+  }
+  .col-lg-8 {
+    width: calc(66.66% - 2rem); /* 66.66% width with some gutter */
+  }
+}
+
+/* Medium screen (tablet) styles */
+@media (min-width: 576px) and (max-width: 767px) {
+  .col-md-6 {
+    width: calc(50% - 1rem); /* 50% width with some gutter */
+  }
+}
+
+/* Small screen (mobile) styles */
+@media (max-width: 575px) {
+  .col-sm-12 {
+    width: 100%; /* Full width */
+  }
+  .services_content_container_text {
+    text-align: center;
+  }
+}
