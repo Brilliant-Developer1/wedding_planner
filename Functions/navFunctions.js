@@ -3,13 +3,13 @@ const closedNav = document.querySelector('.closed_nav');
 const navButton = document.querySelector('.nav_button');
 
 const naveMenu = [
-  'HOME',
-  'About',
-  'service',
+  'home',
+  'about',
+  'services',
   'portfolio',
   'shop',
-  'Team',
-  'Testimonial',
+  'team',
+  'testimonial',
   'blog',
   'contact',
 ];
@@ -17,7 +17,7 @@ const naveMenu = [
 closedNav.innerHTML = naveMenu
   .map(
     e => `<ul>
-  <li><a href="#">${e}</a></li>
+  <li><a href="#${e}">${e}</a></li>
   </ul>`
   )
   .join('');

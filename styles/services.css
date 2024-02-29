@@ -20,6 +20,7 @@
 }
 #services {
   background-color: #f3f3f3;
+  border-top: 3px solid #ffeb3b;
 }
 .services_content_container_text {
   width: 100%;
